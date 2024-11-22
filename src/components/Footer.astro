@@ -1,0 +1,36 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
+>
+  <div
+    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
+  >
+    <span class="text-sm sm:text-center text-white dark:text-zinc-200/90"
+      >© {currentYear}
+      <a
+        href="https://www.linkedin.com/in/matias06"
+        target="_blank"
+        class="hover:underline text-yellow-400">Matias Baeza</a
+      >. todos los derechos reservados
+    </span>
+    <ul
+      class="flex justify-center flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0"
+    >
+      <li>
+        <a href="/#top" class="hover:underline me-4 md:me-6">Home</a>
+      </li>
+      <li>
+        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
+      </li>
+     
+        <button style="background-color:#007BFF; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">
+          <a href="mailto:matias.baeza.escobar@gmail.com?subject=Interesado%20en%20tu%20perfil&body=Hola%20Matías,%0A%0AHe%20encontrado%20tu%20perfil%20y%20me%20gustaría%20contactarte%20para%20hablar%20sobre%20una%20oportunidad%20de%20trabajo.%0A%0A¿Podríamos%20agendar%20una%20reunión%20para%20discutir%20más%20detalles?%0A%0ASaludos,%0A%5BTu%20Nombre%5D" style="color:white; text-decoration:none;">Contáctame</a>
+      </button>
+      
+      </li>
+    </ul>
+  </div>
+</footer>

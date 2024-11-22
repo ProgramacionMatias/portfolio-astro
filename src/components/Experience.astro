@@ -1,0 +1,41 @@
+---
+import type { ACTION_ERROR_CODES, ACTION_QUERY_PARAMS } from "astro:actions";
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        name: "Econgress SPA",
+        date: "marzo 2023 - agosto 2024",
+        title: "Desarrollador Web Front-End",
+        description: 
+            "Diseñé y desarrollé interfaces web modernas utilizando WordPress, JavaScript, CSS3 y HTML5. " +
+            "Implementé funcionalidades interactivas que mejoraron la experiencia del usuario y optimicé el rendimiento del sitio. " +
+            "Demostré habilidades de comunicación efectiva y trabajo en equipo al colaborar con clientes y equipos multidisciplinarios, " +
+            "asegurando que las expectativas fueran cumplidas dentro de los plazos establecidos.",
+        link: "https://www.linkedin.com/in/matias06",
+    },
+    {
+        name: "Municipalidad Padre Hurtado",
+        date: "mayo 2023 - agosto 2023",
+        title: "Práctica Profesional",
+        description: 
+            "Desarrollé componentes dinámicos en React con TailwindCSS para mejorar sistemas internos. " +
+            "Participé en el diseño e implementación de soluciones intuitivas y funcionales, incrementando la eficiencia operativa " +
+            "del departamento de informática. Mostré adaptabilidad al aprender nuevas tecnologías rápidamente y resolví problemas " +
+            "de forma proactiva para cumplir con los objetivos del equipo.",
+        link: "https://www.linkedin.com/in/matias06",
+    },
+];
+
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((experiencie) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }
+
+</ol>

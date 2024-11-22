@@ -1,0 +1,41 @@
+---
+import LinkedIn from "../icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../icons/GitHub.astro";
+import EmailIcon from "../icons/EmailIcon.astro";
+import Badge from "../components/Badge.astro";
+---
+
+<img class="rounded-full size-12 mb-5" src="/public/me.jpg" alt="foto perfil" />
+<h1
+    class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+>
+    Hey, soy Matias <a
+        href="https://www.linkedin.com/in/matias06/"
+        target="_blank"
+        class="flex justify-center items-center"
+    >
+        <Badge>Disponible para Trabajar</Badge>
+    </a>
+</h1>
+<h2 class="text-xl lg:text-2xl text-wrap text-white max-w-[800px]">
+    <span>Desarrollador Front-End Jr.</span> de Santiago, Chile, especializado
+    en la creación de páginas web modernas y responsivas. Apasionado
+    por aprender y mejorar continuamente, con conocimientos en HTML,
+    CSS, JavaScript y frameworks como React.
+</h2>
+
+<nav class="flex gap-4 mt-6 flex-wrap ">
+    <SocialPill href="https://www.linkedin.com/in/matias06/">
+        <LinkedIn class="size-6" />
+        LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/ProgramacionMatias">
+        <GitHub class="size-6" />
+        GitHub
+    </SocialPill>
+    <SocialPill href="https://github.com/ProgramacionMatias">
+        <EmailIcon class="size-6" />
+        matias.baeza.programacion@Gmail.com
+    </SocialPill>
+</nav>
